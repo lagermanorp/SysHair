@@ -1,0 +1,23 @@
+CRIAR TABELA USUARIO
+
+ID 
+NOME
+EMAIL
+SENHA
+
+
+DEPOIS FAZER 
+
+MODEL
+DAO
+FORM
+LISTAR
+ACAO....INCLUSAO
+
+
+
+$titulo = $portifolio->Titulo;
+
+
+
+

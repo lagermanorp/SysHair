@@ -1,0 +1,55 @@
+OPERADORES LÓGICOS - EXERCÍCIO 1
+
+Para A=V, B=V e C=F, qual o 
+resultado das expressões:
+
+a) (A && B) || (A && C) = (V)
+      V	          F
+
+
+b) (A || B) && (A || C) = (V)
+	V	  V
+
+
+c) A || C && B || A && !B = (V)
+   V        F         F    
+
+
+
+OPERADORES RELACIONAIS - EXERCÍCIO 2
+
+Sabendo que A=3, B=7 e C=4, informe se as
+expressões abaixo são verdadeiras ou falsas.
+
+a) (A + C) > B = (F)
+
+b) B >= (A + 2) = (V)
+
+c) C = (B - A) = (V)
+
+d) (B + A) <= C = (F)
+
+e) (C + A) > B = (F)
+
+
+OPERADORES RELACIONAIS - EXERCÍCIO 3
+
+Sabendo que A=5, B=4, C=3 e D=6, informe se as
+expressões abaixo são verdadeiras ou falsas.
+
+a) (A > C) && (C <= D) = (V)
+      V    E      V
+
+b) (A + B) > 10 || (A + B) == (C + D) = (V)
+          F     OU         V
+
+c) (A >= C) && (D >= C) = (V)
+      V      E    V
+
+d) !((A - C) > (B - D)) = (F)
+        2         -2
+             V
+
+e) !((C + D + A) != (B + C + D)) = (F) 
+          14             13
+                  V
