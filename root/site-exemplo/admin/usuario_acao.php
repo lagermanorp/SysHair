@@ -7,6 +7,7 @@
     $usuario->Nome = $_POST["txtNome"];
     $usuario->Email = $_POST["txtEmail"];
     $usuario->Senha = $_POST["txtSenha"];
+   
     //Crio a instancia da DAO
     $usuariosDAO = new UsuariosDAO();
 
@@ -19,8 +20,7 @@
     } else {//Senão Inclusão
     //Invoco o método de inserção da DAO
     $sucesso = $usuariosDAO->Inserir($usuario);
-
-    }
+    } 
         
     if ($sucesso) {
         

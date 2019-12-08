@@ -35,6 +35,7 @@
             <td><?=$us->Nome?></td>
             <td><a href="mailto:<?=$us->Email?>"><?=$us->Email?></a></td>
             <td><a href="usuario_form.php?id=<?=$us->Id?>">Alterar</a></td>
+            <td><a href="usuario_form.php?id=<?=$us->Id?>">Excluir</a></td>
             
         </tr>
         <?php

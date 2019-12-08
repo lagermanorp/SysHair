@@ -27,8 +27,8 @@
         }
         
         
-         //Método para Autenticaçâo no Sistema
-         public function BuscarObjPorUsuarioSenha($usuario, $senha){
+         //Método para Buscar por Usuário
+        public function BuscarObjPorUsuarioSenha($usuario, $senha){
             $sql = "SELECT id, nome, email, senha FROM usuario WHERE email = ? AND senha = ?";
             $parametro = array($usuario, $senha);
             $objusuario = null;
@@ -95,7 +95,7 @@
             }
             catch (PDOException $ex)
             {
-                $this->Mensagem = "Erro ao inserir o registro" . $ex->getMessage();
+                $this->Mensagem = "Erro ao Alterar o registro" . $ex->getMessage();
                 return false;
             }
                     
@@ -153,14 +153,24 @@
             
             return $retorno;
         }
+        
+
         //Método para excluir um registro específico
         public function Excluir($id){
-            
+            $sql = "DELETE FROM usuario where id = ?";
+            $retorno = null;
+            $parametros = array($id);
+            try{
+                $comando = $this->prepare($sql);
+                $comando->execute($parametros);
+                return true;
+            }
+            catch (PDOException $ex)
+            {
+                $this->Mensagem = "Erro ao deletar: " . $ex->getMessage();
+            }
             
         }
-
-        
     }
-
 
 ?>
